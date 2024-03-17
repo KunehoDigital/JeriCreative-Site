@@ -1,0 +1,329 @@
+/* CSS Reset */
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+    margin: 0;
+    padding: 0;
+    /* font: inherit; */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+    color-scheme: dark light;
+    hanging-punctuation: first last;
+}
+
+/* min body height */
+body {
+    min-height: 100svh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+    max-width: var(--p-max-width, 65ch);
+    text-wrap: pretty;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 15px 240px;
+    transition: all .5s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+  
+.logo i{
+    color: #073611;
+    font-size: 3rem;
+    font-weight: 100;
+}
+  
+.logo-text {
+    font-size: 2rem;
+    color: #073611;
+}
+
+.navbar{
+    display: flex;
+}
+  
+.navbar a{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .5s ease;
+}
+  
+.navbar a:hover{
+    color: #0d8a6f;
+}
+  
+.navbar a.active{
+    color: #0d8a6f;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+  
+.header-right a{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 1000;
+    transition: all .5s ease;
+}
+
+.ri-menu-line{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+  
+button{
+    padding: .5em 1.5em .5em;
+    border-radius: 50px;
+    border: none;
+    background-color: #f5f5dc;
+    color: #000000;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+  
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+.bg-hero{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+/* Hero Section */
+
+.hero-section{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    border: black;
+    margin: 10px 240px;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+}
+
+.hero-text div button{
+    padding: 20px;
+}
+
+.hero-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.cta-hero{
+    padding-top: 20px;
+}
+
+img .hero-stock-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+  
+.hero-text-1{
+    padding-top: 50px;
+    font-size: 2.3vw;
+    color: #073611;
+}
+
+.hero-text-2{
+    font-size: 2em;
+}
+
+/* Services Section */
+
+.services-section{
+    margin: 350px 240px;
+}
+
+.services-flexbox{
+    display: flex;
+    justify-content: center;
+    border-style: dashed;
+}
+
+.sbox1{
+    padding: 150px;
+    margin: 30px;
+    border-style: dotted;
+}
+
+.sbox2{
+    padding: 150px;
+    margin: 30px;
+    border-style: dotted;
+}
+
+.sbox3{
+    padding: 150px;
+    margin: 30px;
+    border-style: dotted;
+}
+/* Media Queries */
+
+@media (max-width: 1280px){
+    header{
+      padding: 15px 2%;
+      transition: .2s;
+    }
+  
+    .navbar a{
+      padding: 5px 0;
+      margin: 0px 20px;
+    }
+  
+    .hero-section{
+      margin: 5%;
+    }
+
+    .hero-text-1{
+        font-size: 2.3vw;
+    }
+
+    .hero-text-2{
+        font-size: 1.3em;
+    }
+}
+  
+  
+@media (max-width: 1000px){
+    .ri-menu-line{
+      display: block;
+    }
+  
+    .call-to-action{
+      display: none;
+    }
+  
+    .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      width: 100%;
+      backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      transition: all .5s ease;
+      text-align: center;
+    }
+  
+    .navbar a{
+      /* display: block; */
+      display: none;
+      margin: 20px 0;
+      padding: 0px 25px;
+      transition: all .5s ease;
+    }
+  
+    .navbar a:hover{
+      color: var(--text-color);
+      transform: translateY(5px);
+    }
+  
+    .navbar a-active{
+      color: var(--text-color);
+    }
+  
+    .navbar.open{
+      right: 0%;
+    }
+  
+    .hero-text-1{
+        font-size: 4vw;
+    }
+
+    .hero-text-2{
+        font-size: 1em;
+    }
+
+    .hero-image{
+        order: 1;
+    }
+
+}
+
+@media (max-width: 700px){
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .hero-text{
+          align-items: center;
+          order: 2;
+    }
+}
