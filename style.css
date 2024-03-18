@@ -254,6 +254,15 @@ img .hero-stock-image{
     .hero-text-2{
         font-size: 1.3em;
     }
+
+    .services-section{
+        margin: 5%;
+    }
+
+    .services-flexbox{
+        display: flex;
+        flex-direction: column;
+    }
 }
   
   
