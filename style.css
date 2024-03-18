@@ -93,7 +93,7 @@ header{
   
 .navbar a{
     color: black;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0px 30px;
@@ -211,6 +211,7 @@ img .hero-stock-image{
     display: flex;
     justify-content: center;
     border-style: dashed;
+    flex-wrap: wrap;
 }
 
 .sbox1{
@@ -227,6 +228,49 @@ img .hero-stock-image{
 
 .sbox3{
     padding: 150px;
+    margin: 30px;
+    border-style: dotted;
+}
+
+/* Works Section */
+
+.works-section{
+    margin: 350px 240px;
+}
+
+.works-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: dashed;
+}
+
+.wbox-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wbox1{
+    padding: 100px;
+    margin: 30px;
+    border-style: dotted;
+}
+
+.wbox2{
+    padding: 100px;
+    margin: 30px;
+    border-style: dotted;
+}
+
+.wbox3{
+    padding: 100px;
+    margin: 30px;
+    border-style: dotted;
+}
+
+.wbox4{
+    padding: 100px;
     margin: 30px;
     border-style: dotted;
 }
@@ -259,9 +303,8 @@ img .hero-stock-image{
         margin: 5%;
     }
 
-    .services-flexbox{
-        display: flex;
-        flex-direction: column;
+    .works-section{
+        margin: 5%;
     }
 }
   
