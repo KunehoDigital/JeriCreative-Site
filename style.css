@@ -129,12 +129,12 @@ header{
 }
   
 button{
-    padding: .5em 1.5em .5em;
+    padding: .5em 1.2em .5em;
     border-radius: 50px;
     border: none;
     background-color: #f5f5dc;
     color: #000000;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.3rem;
     text-align: center;
     transition: all 0.3s ease 0s;
@@ -269,21 +269,25 @@ footer{
 }
 
 .fb-logo i{
+    color: #073611;
     font-size: 3rem;
     font-weight: 80;
 }
 
 .instagram-logo i{
+    color: #073611;
     font-size: 3rem;
     font-weight: 80;
 }
 
 .linked-in-logo i{
+    color: #073611;
     font-size: 3rem;
     font-weight: 80;
 }
 
 .tiktok-logo i{
+    color: #073611;
     font-size: 3rem;
     font-weight: 80;
 }
@@ -430,6 +434,7 @@ footer h3, p{
 
     .footer-socials i{
         font-size: 2em;
+        color: #073611;
         padding: 10px;
     }
 
