@@ -201,6 +201,21 @@ img .hero-stock-image{
     font-size: 2em;
 }
 
+/* Partners Section */
+
+.partners-section{
+    display: flex;
+    border-style: dashed;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partner-image{
+    color: #b4b4b4;
+    max-height: 100px;
+    padding: 10px;
+}
+
 /* Services Section */
 
 .services-section{
@@ -254,7 +269,10 @@ img .hero-stock-image{
 /* Footer */
 
 footer{
-    margin: 240px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 240px;
+    margin-left: 240px;
 }
 
 .footer-logo-and-socials{
@@ -319,6 +337,28 @@ footer h3, p{
 
 /* Media Queries */
 
+@media (max-width: 1440px){
+    header{
+        padding: 15px 120px;
+        transition: .2s;
+    }
+
+    .hero-section{
+        margin: 120px;
+    }
+
+    .services-section{
+        margin: 120px;
+    }
+
+    .works-section{
+        margin: 120px;
+    }
+
+    footer{
+        margin: 120px;
+    }
+}
 @media (max-width: 1280px){
     header{
       padding: 15px 2%;
