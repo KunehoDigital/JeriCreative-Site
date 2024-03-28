@@ -50,6 +50,20 @@ h6 {
     text-wrap: balance;
 }
 
+/* Remove Underline Links from Bootstrap */
+a:link { 
+    text-decoration: none; 
+}    
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
+  
 /* improve readability with max-width on paragraphs and lists */
 /* prevent orphans in supported browsers */
 p,
@@ -108,6 +122,10 @@ header{
     color: #0d8a6f;
 }
 
+ul .navbar{
+    border-style: dotted;
+}
+
 .header-right{
     display: flex;
     align-items: center;
@@ -147,16 +165,18 @@ button:hover{
 
 .bg-hero{
     position: absolute;
+    object-fit: cover;
     top: 0;
     z-index: -1;
-    width: 100%;
+    height: 100vh;
+    
 }
 
 /* Hero Section */
 
 .hero-section{
     position: relative;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     flex-direction: row;
     border: black;
@@ -172,6 +192,12 @@ button:hover{
 
 .hero-text div button{
     padding: 20px;
+}
+
+.hero-text-1 h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 2em;
 }
 
 .hero-image{
@@ -201,25 +227,30 @@ img .hero-stock-image{
     font-size: 2em;
 }
 
-/* Partners Section */
+/* Partner Section */
 
-.partners-section{
+.partner-section{
+    background-color: #f7f7f7;
+    width: 100%;
+    z-index: -1;
+}
+
+.partner-image-container{
     display: flex;
-    border-style: dashed;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0px 240px;
 }
 
 .partner-image{
-    color: #b4b4b4;
-    max-height: 100px;
+    max-height: 80px;
     padding: 10px;
 }
 
 /* Services Section */
 
 .services-section{
-    margin: 350px 240px;
+    margin: 240px 240px;
 }
 
 .services-flexbox{
@@ -230,40 +261,60 @@ img .hero-stock-image{
 }
 
 .sbox1{
-    padding: 150px;
+    padding: 120px;
     margin: 30px;
     border-style: dotted;
 }
 
 .sbox2{
-    padding: 150px;
+    padding: 120px;
     margin: 30px;
     border-style: dotted;
 }
 
 .sbox3{
-    padding: 150px;
+    padding: 120px;
     margin: 30px;
     border-style: dotted;
+}
+
+/* Services Alt Section */
+.services-alt-section{
+    display: flex;
+    margin: 0px 240px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.services-alt-text{
+    width: 50%;
+}
+
+.accordion{
+    width: 50%;
 }
 
 /* Works Section */
 
 .works-section{
-    margin: 350px 240px;
+    margin: 0px 240px;
+    padding-top: 100px;
 }
 
 .works-flexbox{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-style: dashed;
 }
 
 .wbox{
     padding: 120px;
     margin: 30px;
     border-style: dotted;
+}
+
+.card{
+    margin: 30px;
 }
 
 /* Footer */
@@ -347,7 +398,15 @@ footer h3, p{
         margin: 120px;
     }
 
+    .partner-image-container{
+        margin: 120px;
+    }
+
     .services-section{
+        margin: 120px;
+    }
+
+    .services-alt-section{
         margin: 120px;
     }
 
@@ -382,7 +441,15 @@ footer h3, p{
         font-size: 1.3em;
     }
 
+    .partner-image-container{
+        margin: 5%;
+    }
+
     .services-section{
+        margin: 5%;
+    }
+
+    .services-alt-section{
         margin: 5%;
     }
 
@@ -410,7 +477,7 @@ footer h3, p{
       top: 100%;
       left: 0%;
       width: 100%;
-      backdrop-filter: blur(6px);
+      /* backdrop-filter: blur(6px); */
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
