@@ -207,8 +207,12 @@ button:hover{
     max-width: 50%;
 }
 
+.hero-image img{
+    /* min-width: 300px; */
+}
+
 .cta-hero{
-    padding-top: 20px;
+    padding: 20px 0px;
 }
 
 img .hero-stock-image{
