@@ -106,7 +106,7 @@ header{
 }
   
 .navbar a{
-    color: black;
+    color: #073611;
     font-size: 1rem;
     font-weight: 500;
     padding: 5px 0;
@@ -145,13 +145,19 @@ ul .navbar{
     z-index: 10001;
     display: none;
 }
+
+.offcanvasbody{
+    justify-content: center;
+    font-size: small;
+    font-weight: 100;
+}
   
 button{
     padding: .5em 1.2em .5em;
-    border-radius: 50px;
-    border: none;
-    background-color: #f5f5dc;
-    color: #000000;
+    border-radius: 10px;
+    border: 1px solid #073611;
+    background-color: white;
+    color: #073611;
     font-weight: 700;
     font-size: 1.3rem;
     text-align: center;
@@ -159,7 +165,7 @@ button{
 }
   
 button:hover{
-    background-color: black;
+    background-color: #073611;
     color: white;
 }
 
@@ -190,9 +196,9 @@ button:hover{
     width: 75%;
 }
 
-.hero-text div button{
+/* .hero-text div button{
     padding: 20px;
-}
+} */
 
 .hero-text-1 h1{
     font-family: 'Raleway', sans-serif;
@@ -288,14 +294,20 @@ img .hero-stock-image{
     margin: 0px 240px;
     padding-top: 100px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .services-alt-text{
     width: 50%;
 }
 
+.cta-services-alt{
+    padding-bottom: 20px;
+}
+
 .accordion{
     width: 50%;
+    padding: 20px;
 }
 
 /* Works Section */
@@ -307,18 +319,28 @@ img .hero-stock-image{
 
 .works-flexbox{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     flex-wrap: wrap;
 }
 
 .wbox{
     padding: 120px;
-    margin: 30px;
+    margin: 15px;
     border-style: dotted;
 }
 
 .card{
     margin: 30px;
+}
+
+.btn-primary{
+    /* background-color: #073611; */
+    border: none;
+}
+
+.btn-primary a:hover{
+    background-color: #073611;
+    border: none;
 }
 
 /* Footer */
@@ -521,6 +543,19 @@ footer h3, p{
     .hero-image{
         order: 1;
     }
+
+    .services-alt-text{
+        width: 100%;
+        padding: 0px 20px;
+
+    }
+
+    .accordion{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
 
 }
 
