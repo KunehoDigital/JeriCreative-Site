@@ -165,7 +165,7 @@ button{
 }
   
 button:hover{
-    background-color: #073611;
+    /* background-color: #073611; */
     color: white;
 }
 
@@ -210,15 +210,13 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 50%;
-}
-
-.hero-image img{
-    /* min-width: 300px; */
+    width: 80%;
+    /* max-width: 50%; */
 }
 
 .cta-hero{
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
+    padding-bottom: 20px;
 }
 
 img .hero-stock-image{
@@ -228,7 +226,7 @@ img .hero-stock-image{
 }
   
 .hero-text-1{
-    padding-top: 50px;
+    padding-top: 5px;
     font-size: 2.3vw;
     color: #073611;
 }
@@ -249,7 +247,8 @@ img .hero-stock-image{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0px 240px;
+    /* margin: 0px 240px; */
+    border-style: dotted;
 }
 
 .partner-image{
@@ -257,48 +256,18 @@ img .hero-stock-image{
     padding: 10px;
 }
 
-/* Services Section */
-
-.services-section{
-    margin: 240px 240px;
-}
-
-.services-flexbox{
-    display: flex;
-    justify-content: center;
-    border-style: dashed;
-    flex-wrap: wrap;
-}
-
-.sbox1{
-    padding: 120px;
-    margin: 30px;
-    border-style: dotted;
-}
-
-.sbox2{
-    padding: 120px;
-    margin: 30px;
-    border-style: dotted;
-}
-
-.sbox3{
-    padding: 120px;
-    margin: 30px;
-    border-style: dotted;
-}
-
 /* Services Alt Section */
 .services-alt-section{
     display: flex;
-    margin: 0px 240px;
-    padding-top: 100px;
+    padding: 100px 240px 0px 240px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .services-alt-text{
+    color: #073611;
     width: 50%;
+    min-width: 300px;
 }
 
 .cta-services-alt{
@@ -308,13 +277,14 @@ img .hero-stock-image{
 .accordion{
     width: 50%;
     padding: 20px;
+    min-width: 300px;
 }
 
 /* Works Section */
 
 .works-section{
     margin: 0px 240px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 .works-flexbox{
@@ -428,12 +398,8 @@ footer h3, p{
         margin: 120px;
     }
 
-    .services-section{
-        margin: 120px;
-    }
-
     .services-alt-section{
-        margin: 120px;
+        padding: 120px;
     }
 
     .works-section{
@@ -471,12 +437,8 @@ footer h3, p{
         margin: 5%;
     }
 
-    .services-section{
-        margin: 5%;
-    }
-
     .services-alt-section{
-        margin: 5%;
+        padding: 5%;
     }
 
     .works-section{
@@ -555,8 +517,61 @@ footer h3, p{
     }
 }
 
-@media (max-width: 700px){
+ /* The Modal (background) */
 
+#myBtn, #myBtn1{
+    padding: 0;
+    border: none;
+}
+
+#myBtn a:hover{
+    background-color: none;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+@media (max-width: 700px){
+    .hero-text-1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .hero-text-2{
+        text-align: center;
+    }
 }
 
 @media (max-width: 700px){
