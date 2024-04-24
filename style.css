@@ -248,7 +248,6 @@ img .hero-stock-image{
     justify-content: space-around;
     flex-wrap: wrap;
     /* margin: 0px 240px; */
-    border-style: dotted;
 }
 
 .partner-image{
