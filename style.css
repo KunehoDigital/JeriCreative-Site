@@ -323,7 +323,7 @@ img .hero-stock-image{
     color: white;
 }
 
-.cta-services-alt-id a:hover !important{
+.cta-services-alt-id a:hover{
     border: white;
     border-style: dashed;
 }
