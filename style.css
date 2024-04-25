@@ -12,7 +12,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* font: inherit; */
+    font: inherit;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -95,9 +95,16 @@ header{
     font-size: 3rem;
     font-weight: 100;
 }
+
+#logo-img{
+    font-size: 3rem;
+    max-width: 70px;
+    padding-right: 5px;
+}
   
 .logo-text {
     font-size: 2rem;
+    font-weight: 400;
     color: #073611;
 }
 
@@ -165,7 +172,7 @@ button{
 }
   
 button:hover{
-    /* background-color: #073611; */
+    background-color: #073611;
     color: white;
 }
 
@@ -184,9 +191,10 @@ button:hover{
     position: relative;
     /* height: 80vh; */
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    border: black;
     margin: 10px 240px;
+    padding-top: 20px;
 }
 
 .hero-text{
@@ -196,14 +204,10 @@ button:hover{
     width: 75%;
 }
 
-/* .hero-text div button{
-    padding: 20px;
-} */
-
 .hero-text-1 h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .hero-image{
@@ -215,7 +219,6 @@ button:hover{
 }
 
 .cta-hero{
-    /* padding: 20px 0px; */
     padding-bottom: 20px;
 }
 
@@ -231,14 +234,16 @@ img .hero-stock-image{
     color: #073611;
 }
 
-.hero-text-2{
-    font-size: 2em;
+.hero-text-2 p{
+    font-size: 1em;
+    color: #073611;
+    font-weight: 400;
 }
 
 /* Partner Section */
 
 .partner-section{
-    background-color: #f7f7f7;
+    /* background-color: #409954; */
     width: 100%;
     z-index: -1;
 }
@@ -247,7 +252,7 @@ img .hero-stock-image{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* margin: 0px 240px; */
+    margin: 0px 240px;
 }
 
 .partner-image{
@@ -255,22 +260,72 @@ img .hero-stock-image{
     padding: 10px;
 }
 
+/* Showcase Section */
+.showcase-section{
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.showcase-top-text{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.showcase-bottom-text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.showcase-bottom-text1, .showcase-bottom-text2, .showcase-bottom-text3{
+    margin: 20px;
+}
+
+.showcase-bottom-text1-number, .showcase-bottom-text2-number, .showcase-bottom-text3-number{
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    color: #073611;
+}
+
+.showcase-bottom-text1-text, .showcase-bottom-text2-text, .showcase-bottom-text3-text{
+    font-size: 1em;
+    text-align: center;
+}
+
 /* Services Alt Section */
 .services-alt-section{
     display: flex;
-    padding: 100px 240px 0px 240px;
+    padding: 100px 240px 100px 240px;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #073611;
 }
 
 .services-alt-text{
-    color: #073611;
     width: 50%;
     min-width: 300px;
 }
 
-.cta-services-alt{
-    padding-bottom: 20px;
+.services-alt-text-1 h1{
+    font-size: 2.8em;
+    font-weight: 700;
+    color: white;
+}
+
+.services-alt-text-2 p{
+    color: white;
+}
+
+.cta-services-alt-id a:hover !important{
+    border: white;
+    border-style: dashed;
 }
 
 .accordion{
@@ -283,7 +338,18 @@ img .hero-stock-image{
 
 .works-section{
     margin: 0px 240px;
-    /* padding-top: 100px; */
+    padding-top: 100px;
+}
+
+.works-title h1{
+    font-size: 3em;
+    font-weight: 800;
+    color: #073611;
+}
+
+.works-description p{
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .works-flexbox{
@@ -411,7 +477,7 @@ footer h3, p{
 }
 @media (max-width: 1280px){
     header{
-      padding: 15px 2%;
+      padding: 15px 5%;
       transition: .2s;
     }
   
@@ -434,6 +500,15 @@ footer h3, p{
 
     .partner-image-container{
         margin: 5%;
+    }
+
+    .showcase-top-text{
+        padding: 5%;
+    }
+    .showcase-bottom-text{
+        padding: 5%;
+        text-align: center;
+        justify-content: center;
     }
 
     .services-alt-section{
@@ -518,7 +593,7 @@ footer h3, p{
 
  /* The Modal (background) */
 
-#myBtn, #myBtn1{
+#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7, #myBtn8, #myBtn9, #myBtn10, #myBtn11{
     padding: 0;
     border: none;
 }
